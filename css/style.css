@@ -1,0 +1,155 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #030303; }
+
+a {
+  text-transform: uppercase;
+  font-size: 18px;
+  text-decoration: none;
+  color: #030303; }
+  a:hover, a:focus {
+    color: #363636; }
+
+p {
+  font-size: 16px; }
+
+main {
+  max-width: 1050px;
+  margin: 0 auto; }
+  main section {
+    text-align: center;
+    padding-bottom: 60px; }
+  main .two_columns,
+  main .three_columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+    @media (max-width: 768px) {
+      main .two_columns,
+      main .three_columns {
+        margin: 0 15px; } }
+    main .two_columns figure,
+    main .three_columns figure {
+      margin-left: 15px; }
+      @media (max-width: 480px) {
+        main .two_columns figure,
+        main .three_columns figure {
+          margin-left: 0; } }
+      main .two_columns figure:first-child,
+      main .three_columns figure:first-child {
+        margin-left: 0; }
+  main .description {
+    max-width: 50%;
+    margin: 0 auto; }
+    @media (max-width: 480px) {
+      main .description {
+        max-width: 100%; } }
+    main .description p {
+      padding-bottom: 30px; }
+  @media (max-width: 768px) {
+    main .one_column {
+      margin: 0 15px; } }
+  main .one_column img {
+    max-width: 100%; }
+
+.details {
+  text-align: center;
+  padding: 15px 0; }
+
+header {
+  margin-bottom: 60px; }
+  header .banner {
+    background: -webkit-gradient(linear, right top, left top, color-stop(0, #CBD1D6), color-stop(1, #D4D7D9));
+    background: -o-linear-gradient(left, #CBD1D6 0%, #D4D7D9 100%);
+    background: -moz-linear-gradient(left, #CBD1D6 0%, #D4D7D9 100%);
+    background: -webkit-linear-gradient(left, #CBD1D6 0%, #D4D7D9 100%);
+    background: -ms-linear-gradient(left, #CBD1D6 0%, #D4D7D9 100%);
+    background: linear-gradient(to left, #CBD1D6 0%, #D4D7D9 100%); }
+  header .inner {
+    min-height: 730px;
+    max-width: 1050px;
+    margin: 0 auto;
+    background: url(../images/image-banner.png) no-repeat top right;
+    position: relative; }
+  header section {
+    width: 40%;
+    height: 50%;
+    overflow: auto;
+    margin: auto 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0; }
+    @media (max-width: 1100px) {
+      header section {
+        margin: auto 15px; } }
+    @media (max-width: 768px) {
+      header section {
+        width: 80%; } }
+    header section h1 {
+      font-size: 48px;
+      padding-bottom: 30px; }
+    header section p {
+      padding-bottom: 30px; }
+    header section a {
+      font-weight: bold; }
+  header .details {
+    max-width: 1050px;
+    margin: 0 auto; }

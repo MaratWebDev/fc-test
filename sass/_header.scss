@@ -1,0 +1,55 @@
+header {
+	margin-bottom: $padding*2;
+	.banner {
+		background: -webkit-gradient(
+			linear,
+			right top,
+			left top,
+			color-stop(0, #CBD1D6),
+			color-stop(1, #D4D7D9)
+		);
+		background: -o-linear-gradient(left, #CBD1D6 0%, #D4D7D9 100%);
+		background: -moz-linear-gradient(left, #CBD1D6 0%, #D4D7D9 100%);
+		background: -webkit-linear-gradient(left, #CBD1D6 0%, #D4D7D9 100%);
+		background: -ms-linear-gradient(left, #CBD1D6 0%, #D4D7D9 100%);
+		background: linear-gradient(to left, #CBD1D6 0%, #D4D7D9 100%);
+	}
+	.inner {
+		min-height: 730px;
+		max-width: 1050px;
+		margin: 0 auto;
+		background: url(../images/image-banner.png) no-repeat top right;
+		position: relative;
+	}
+	section {
+		width: 40%;
+		height: 50%;
+		overflow: auto;
+		margin: auto 0;
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		@media (max-width: $small-desktop) {
+			margin: auto $padding/2;
+		}
+		@media (max-width: $tablet) {
+			width: 80%;
+		}
+		h1 {
+			font-size: 48px;
+			padding-bottom: $padding;
+		}
+		p {
+			padding-bottom: $padding;
+		}
+		a {
+			font-weight: bold;
+		}
+	}
+	.details {
+		max-width: 1050px;
+		margin: 0 auto;
+	}
+}
